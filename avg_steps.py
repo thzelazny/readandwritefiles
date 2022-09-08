@@ -99,18 +99,18 @@ for record in csvfile_old:
         total_steps12+=steps
         avg_steps12=total_steps12/num_days12
 
-csvinput.writerow(["January",avg_steps1])
-csvinput.writerow(["February",avg_steps2])
-csvinput.writerow(["March",avg_steps3])
-csvinput.writerow(["April",avg_steps4])
-csvinput.writerow(["May",avg_steps5])
-csvinput.writerow(["June",avg_steps6])
-csvinput.writerow(["July",avg_steps7])
-csvinput.writerow(["August",avg_steps8])
-csvinput.writerow(["September",avg_steps9])
-csvinput.writerow(["October",avg_steps10])
-csvinput.writerow(["November",avg_steps11])
-csvinput.writerow(["December",avg_steps12])
+csvinput.writerow(["January",format(avg_steps1,",.2f")])
+csvinput.writerow(["February",format(avg_steps2,",.2f")])
+csvinput.writerow(["March",format(avg_steps3,",.2f")])
+csvinput.writerow(["April",format(avg_steps4,",.2f")])
+csvinput.writerow(["May",format(avg_steps5,",.2f")])
+csvinput.writerow(["June",format(avg_steps6,",.2f")])
+csvinput.writerow(["July",format(avg_steps7,",.2f")])
+csvinput.writerow(["August",format(avg_steps8,",.2f")])
+csvinput.writerow(["September",format(avg_steps9,",.2f")])
+csvinput.writerow(["October",format(avg_steps10,",.2f")])
+csvinput.writerow(["November",format(avg_steps11,",.2f")])
+csvinput.writerow(["December",format(avg_steps12,",.2f")])
 
 
 outfile.close()
